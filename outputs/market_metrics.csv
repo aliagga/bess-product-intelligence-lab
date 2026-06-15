@@ -1,0 +1,15 @@
+metric_name,metric_value,unit,product_interpretation
+Market time horizon,336.0,hours,Shows the size of the market sample used in the V1 prototype.
+Average Day-Ahead price,77.67,EUR/MWh,Provides a baseline view of the energy-market price environment.
+Maximum Day-Ahead price,151.31,EUR/MWh,Highlights high-price periods where discharge value may be strong.
+Minimum Day-Ahead price,-14.45,EUR/MWh,Highlights low-price or negative-price periods where charging may be attractive.
+Average daily Day-Ahead spread,98.28,EUR/MWh,Indicates arbitrage potential and the need for strategy comparison.
+High-price hours,68.0,hours,Represents hours where discharge or reserve activation value may be relevant.
+Low-price hours,68.0,hours,Represents hours where charging opportunities may exist.
+Negative-price hours,3.0,hours,"Supports product features around renewable surplus, charging recommendations, and price-event explanations."
+Average FCR price,17.86,EUR/MW/h,Supports reserve-market revenue attribution and strategy comparison.
+Average aFRR up price,10.94,EUR/MW/h,Shows the value potential of upward reserve participation.
+Average aFRR down price,6.68,EUR/MW/h,Shows the value potential of downward reserve participation.
+High grid-constraint hours,16.0,hours,Supports the need for grid-constraint explainability and missed-revenue analysis.
+Medium grid-constraint hours,110.0,hours,Indicates periods where asset operation may be partially limited.
+High imbalance-risk hours,1.0,hours,Supports future V2 features around risk-aware dispatch and forecast uncertainty.

@@ -123,6 +123,7 @@ bess-product-intelligence-lab/
 │   └── product_kpis.py
 │
 ├── outputs/
+│   ├── market_metrics.csv
 │   ├── revenue_scenarios.csv
 │   ├── asset_kpis.csv
 │   └── roadmap_prioritization.csv
@@ -232,12 +233,16 @@ streamlit run app.py
 
 ## Current V1 Outputs
 
-| Output                          | Description                                    |
-| ------------------------------- | ---------------------------------------------- |
-| `data/sample_market_prices.csv` | Synthetic hourly market data                   |
-| `data/sample_bess_assets.csv`   | Sample BESS asset portfolio                    |
-| `data/sample_product_usage.csv` | Product usage and customer health data         |
-| `outputs/revenue_scenarios.csv` | Revenue scenario comparison across BESS assets |
+
+| Output                               | Description                                     |
+|--------------------------------------|-------------------------------------------------|
+| `data/sample_market_prices.csv`      | Synthetic hourly market data                    |
+| `data/sample_bess_assets.csv`        | Sample BESS asset portfolio                     |
+| `data/sample_product_usage.csv`      | Product usage and customer health data          |
+| `outputs/market_metrics.csv`         | Product-facing market intelligence metrics      |
+| `outputs/revenue_scenarios.csv`      | Revenue scenario comparison across BESS assets  |
+| `outputs/asset_kpis.csv`             | Asset-level product and commercial KPIs         |
+| `outputs/roadmap_prioritization.csv` | Feature prioritization using RICE-style scoring |
 
 Additional outputs will be added in the next steps:
 
