@@ -290,6 +290,20 @@ Examples:
 This is the core product-management logic of V1: technical results are not only calculated; they are translated into roadmap-relevant product insights.
 
 ---
+---
+
+## Product Documentation
+
+The `product/` folder contains the product-management artifacts for V1:
+
+| File | Purpose |
+|---|---|
+| `product/01_product_brief.md` | Defines the problem, product opportunity, users, V1 scope, and product value |
+| `product/02_customer_personas.md` | Defines external and internal user personas and their product needs |
+| `product/03_prd.md` | Defines the Product Requirements Document for the V1 prototype |
+| `product/04_product_kpi_framework.md` | Defines customer value, market, grid, product usage, and roadmap KPIs |
+| `product/05_roadmap_prioritization.md` | Explains the RICE-style prioritization logic and roadmap feature candidates |
+| `product/06_v2_roadmap.md` | Defines how V1 evolves into a more advanced V2 product intelligence layer |
 
 ## Product Management Relevance
 
