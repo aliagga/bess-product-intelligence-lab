@@ -1,0 +1,5 @@
+asset_id,asset_name,country,power_mw,energy_mwh,round_trip_efficiency,min_soc_mwh,max_soc_mwh,initial_soc_mwh,grid_connection_mw,commercial_model,asset_owner_type
+BESS_DE_01,Germany Utility Scale Asset,Germany,50.0,100.0,0.88,10.0,95.0,50.0,45.0,merchant,IPP
+BESS_DE_02,Germany Investor-Backed Asset,Germany,20.0,55.0,0.9,5.0,52.0,25.0,18.0,floor_style_revenue_protection,Infrastructure Investor
+BESS_ES_01,Spain Co-location Candidate,Spain,30.0,60.0,0.89,6.0,57.0,30.0,25.0,merchant,Renewable Developer
+BESS_PL_01,Poland Market Entry Asset,Poland,15.0,30.0,0.87,3.0,28.0,15.0,12.0,market_entry_pilot,Municipal Utility
