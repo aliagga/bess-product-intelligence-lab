@@ -191,6 +191,26 @@ The output includes:
 
 ---
 
+---
+
+## Streamlit Dashboard
+
+The V1 dashboard presents the product sprint through seven sections:
+
+1. Executive Overview
+2. Market Intelligence
+3. Revenue Scenario Comparison
+4. Asset Product KPIs
+5. Grid Constraint Impact
+6. Roadmap Prioritization
+7. V2 Roadmap
+
+Run the dashboard:
+
+```bash
+streamlit run app.py
+
+
 ## How to Run the Full V1 Workflow
 
 Create a virtual environment:
