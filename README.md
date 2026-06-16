@@ -8,6 +8,23 @@ The goal is not to replicate a production trading platform. The goal is to show 
 
 ---
 
+## Portfolio Positioning
+
+This repository is designed as a product-management portfolio artifact for battery storage software.
+
+It demonstrates the ability to:
+
+* Understand grid-scale BESS market logic
+* Translate technical outputs into customer-facing product insights
+* Define product requirements and KPIs
+* Prioritize roadmap features using structured product evidence
+* Build a lightweight software prototype
+* Communicate across product, engineering, trading, operations, sales, and customer-success perspectives
+
+The project is intentionally built as V1: compact, explainable, and ready to share. The V2 roadmap defines how it can evolve into a more advanced product-intelligence layer.
+
+---
+
 ## Why This Project Exists
 
 Grid-scale battery storage owners, developers, investors, and operators need more than dispatch optimization. They need to understand:
@@ -47,13 +64,14 @@ The V1 prototype includes:
 2. Sample BESS asset data
 3. Sample product-usage data
 4. Revenue scenario simulator
-5. Product KPI framework
-6. Streamlit dashboard
-7. Product brief
-8. Customer personas
-9. Product Requirements Document
-10. Roadmap prioritization
-11. V2 roadmap
+5. Market intelligence metrics
+6. Product KPI framework
+7. Streamlit dashboard
+8. Product brief
+9. Customer personas
+10. Product Requirements Document
+11. Roadmap prioritization
+12. V2 roadmap
 
 ---
 
@@ -191,6 +209,35 @@ The output includes:
 
 ---
 
+## Market Metrics and Product KPIs
+
+The project also converts the synthetic market data, revenue scenarios, and product usage data into product-facing outputs.
+
+Run the market metrics module:
+
+```bash
+python src/market_metrics.py
+```
+
+This creates:
+
+```text
+outputs/market_metrics.csv
+```
+
+Run the product KPI and roadmap module:
+
+```bash
+python src/product_kpis.py
+```
+
+This creates:
+
+```text
+outputs/asset_kpis.csv
+outputs/roadmap_prioritization.csv
+```
+
 ---
 
 ## Streamlit Dashboard
@@ -209,7 +256,11 @@ Run the dashboard:
 
 ```bash
 streamlit run app.py
+```
 
+The dashboard is designed to demonstrate how technical battery-market outputs can be translated into product decisions, customer value, product KPIs, and roadmap priorities.
+
+---
 
 ## How to Run the Full V1 Workflow
 
@@ -243,13 +294,23 @@ Run the revenue scenario simulator:
 python src/bess_simulator.py
 ```
 
+Run the market metrics module:
+
+```bash
+python src/market_metrics.py
+```
+
+Run the product KPI and roadmap module:
+
+```bash
+python src/product_kpis.py
+```
+
 Run the Streamlit dashboard:
 
 ```bash
 streamlit run app.py
 ```
-
----
 
 ---
 
@@ -269,11 +330,12 @@ The V1 dashboard translates market and technical outputs into product insights.
 
 ![Roadmap Prioritization](demo/screenshots/06_roadmap_prioritization.png)
 
+---
+
 ## Current V1 Outputs
 
-
 | Output                               | Description                                     |
-|--------------------------------------|-------------------------------------------------|
+| ------------------------------------ | ----------------------------------------------- |
 | `data/sample_market_prices.csv`      | Synthetic hourly market data                    |
 | `data/sample_bess_assets.csv`        | Sample BESS asset portfolio                     |
 | `data/sample_product_usage.csv`      | Product usage and customer health data          |
@@ -281,13 +343,6 @@ The V1 dashboard translates market and technical outputs into product insights.
 | `outputs/revenue_scenarios.csv`      | Revenue scenario comparison across BESS assets  |
 | `outputs/asset_kpis.csv`             | Asset-level product and commercial KPIs         |
 | `outputs/roadmap_prioritization.csv` | Feature prioritization using RICE-style scoring |
-
-Additional outputs will be added in the next steps:
-
-| Planned Output                       | Description                                        |
-| ------------------------------------ | -------------------------------------------------- |
-| `outputs/asset_kpis.csv`             | Asset-level product and commercial KPIs            |
-| `outputs/roadmap_prioritization.csv` | Feature prioritization using product scoring logic |
 
 ---
 
@@ -308,20 +363,41 @@ Examples:
 This is the core product-management logic of V1: technical results are not only calculated; they are translated into roadmap-relevant product insights.
 
 ---
----
 
 ## Product Documentation
 
 The `product/` folder contains the product-management artifacts for V1:
 
-| File | Purpose |
-|---|---|
-| `product/01_product_brief.md` | Defines the problem, product opportunity, users, V1 scope, and product value |
-| `product/02_customer_personas.md` | Defines external and internal user personas and their product needs |
-| `product/03_prd.md` | Defines the Product Requirements Document for the V1 prototype |
-| `product/04_product_kpi_framework.md` | Defines customer value, market, grid, product usage, and roadmap KPIs |
-| `product/05_roadmap_prioritization.md` | Explains the RICE-style prioritization logic and roadmap feature candidates |
-| `product/06_v2_roadmap.md` | Defines how V1 evolves into a more advanced V2 product intelligence layer |
+| File                                   | Purpose                                                                      |
+| -------------------------------------- | ---------------------------------------------------------------------------- |
+| `product/01_product_brief.md`          | Defines the problem, product opportunity, users, V1 scope, and product value |
+| `product/02_customer_personas.md`      | Defines external and internal user personas and their product needs          |
+| `product/03_prd.md`                    | Defines the Product Requirements Document for the V1 prototype               |
+| `product/04_product_kpi_framework.md`  | Defines customer value, market, grid, product usage, and roadmap KPIs        |
+| `product/05_roadmap_prioritization.md` | Explains the RICE-style prioritization logic and roadmap feature candidates  |
+| `product/06_v2_roadmap.md`             | Defines how V1 evolves into a more advanced V2 product intelligence layer    |
+
+---
+
+## Demo Script
+
+A short demo script is available here:
+
+```text
+demo/demo_script.md
+```
+
+The demo is designed to explain the project in 4–5 minutes, focusing on:
+
+* Product problem
+* BESS revenue scenario logic
+* Market intelligence
+* Grid-constraint explainability
+* Asset/product KPIs
+* Roadmap prioritization
+* V2 roadmap
+
+---
 
 ## Product Management Relevance
 
