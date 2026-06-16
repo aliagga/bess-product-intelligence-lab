@@ -251,6 +251,24 @@ streamlit run app.py
 
 ---
 
+---
+
+## Dashboard Preview
+
+The V1 dashboard translates market and technical outputs into product insights.
+
+### Executive Overview
+
+![Executive Overview](demo/screenshots/01_executive_overview.png)
+
+### Revenue Scenario Comparison
+
+![Revenue Scenario Comparison](demo/screenshots/03_revenue_scenarios.png)
+
+### Roadmap Prioritization
+
+![Roadmap Prioritization](demo/screenshots/06_roadmap_prioritization.png)
+
 ## Current V1 Outputs
 
 
